@@ -1,0 +1,29 @@
+body {
+    height: 100vh;
+}
+
+.name{
+    color: lightblue;
+    font-size: 100px;
+}
+
+.main-photo{
+    position: relative;
+    float: right;
+}
+
+.flex_box{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.foot_flex_box{
+    display: flex;
+    position: fixed;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    bottom: 20px;
+    width: 100vw;
+}
