@@ -1,19 +1,37 @@
 body {
     height: 100vh;
+    background: linear-gradient(to bottom, #9fb8ad, #475841);
 }
 
 .name{
-    color: lightblue;
+    display: flex;
+    color: #3f403f;
     font-size: 100px;
+    width: 100vw;
+    height: auto;
+    justify-content: center;
+    margin-bottom: 0px;
+}
+.subtitle{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    margin-top: 0px;
+    margin-bottom: 50px;
+
+    color: #3f403f;
+    font-weight: bolder;
+
 }
 
 .main-photo{
     position: relative;
-    float: right;
+    height: 500px;
 }
 
 .flex_box{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
 }
@@ -26,4 +44,12 @@ body {
     justify-content: space-evenly;
     bottom: 20px;
     width: 100vw;
+}
+
+a:link{
+    text-decoration: none;
+    color: #388659;
+}
+a:visited{
+    color: #388659;
 }

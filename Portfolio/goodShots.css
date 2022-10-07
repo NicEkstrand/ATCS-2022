@@ -1,0 +1,21 @@
+.shots{
+    display: flex;
+    justify-content: center;
+}
+
+video{
+    margin-top: 20px;
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient(to bottom, #e0fbfc, #293241);
+    
+}
+.title{
+    display: flex;
+    justify-content: center;
+    background-color: #ee6c4d;
+    position: sticky;
+    top: 10px;
+}
