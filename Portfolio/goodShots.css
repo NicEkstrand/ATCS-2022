@@ -1,15 +1,17 @@
 .shots{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
 video{
     margin-top: 20px;
+    width: 40vw;
 }
 
 body{
     height: 100vh;
-    background: linear-gradient(to bottom, #e0fbfc, #293241);
+    background: #e6e6e6;
     
 }
 .title{
