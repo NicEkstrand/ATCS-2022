@@ -3,6 +3,7 @@ body{
     background-color: #D6EADF;
     display: flex;
     flex-wrap: wrap;
+    margin: 0;
 }
 
 .title{
@@ -10,19 +11,23 @@ body{
     height: 100vh;
     background-color: #B8E0D2;
     display: flex;
-    align-content:space-between;
+    align-items: center;
     justify-content: center;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 5vw;
+
 }
 
 .text{
-    width: 49vw;
+    width: 50vw;
     height: 100vh;
     background-color: #95B8D1;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: center;
+    text-align: center;
     color: #13070C;
+    font-family: "Helvetica", "Sans-sarif"
 }
 
 .backbutton{
@@ -32,6 +37,7 @@ body{
     font-size: 30px;
     color: #383B53;
     position: fixed;
+    left: 20px;
     
 }
 

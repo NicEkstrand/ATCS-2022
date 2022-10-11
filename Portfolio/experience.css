@@ -1,3 +1,49 @@
+.title{
+    display: flex;
+    background-color: #A2A77F;
+    color: #002E2C;
+    font-size: 1.25vw;
+    justify-content: center;
+    height: 5vh;
+    margin: 0px;
+}
+
+.title > h1{
+    margin: 0;
+}
+
+.images > img{
+    height: 10vw;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+
+
+.middle{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    height: 95vh;
+    background-color: #c7c093;
+    
+}
+
+.images{
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    height: 95vh;
+    background-color: #002E2C;
+    align-items: center;
+    justify-content: center;
+}
+
 .backbutton{
     display: flex;
     align-content: flex-end;
@@ -5,5 +51,11 @@
     font-size: 30px;
     color: #383B53;
     position: fixed;
+    left: 20px;
     
+}
+body{
+    height: 100vh;
+    background-color: #EFF1C5;
+    margin: 0;
 }
