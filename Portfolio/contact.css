@@ -1,0 +1,40 @@
+body{
+    height: 100vh;
+    background-color: #D6EADF;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.title{
+    width: 50vw;
+    height: 100vh;
+    background-color: #B8E0D2;
+    display: flex;
+    align-content:space-between;
+    justify-content: center;
+}
+
+.text{
+    width: 49vw;
+    height: 100vh;
+    background-color: #95B8D1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    color: #13070C;
+}
+
+.backbutton{
+    display: flex;
+    align-content: flex-end;
+    bottom: 10px;
+    font-size: 30px;
+    color: #383B53;
+    position: fixed;
+    
+}
+
+a:visited{
+    color: #383B53;
+}

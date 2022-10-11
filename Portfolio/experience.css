@@ -1,0 +1,9 @@
+.backbutton{
+    display: flex;
+    align-content: flex-end;
+    bottom: 10px;
+    font-size: 30px;
+    color: #383B53;
+    position: fixed;
+    
+}
