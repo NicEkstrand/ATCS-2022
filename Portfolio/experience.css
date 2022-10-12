@@ -13,7 +13,7 @@
 }
 
 .images > img{
-    height: 10vw;
+    height: 9vw;
     margin-top: 1vh;
     margin-bottom: 1vh;
 }
@@ -28,7 +28,12 @@
 .text{
     display: flex;
     flex-direction: column;
-    width: 60vw;
+    justify-content: space-around;
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2vh;
+
+    width: 59vw;
     height: 95vh;
     background-color: #c7c093;
     
@@ -54,6 +59,10 @@
     left: 20px;
     
 }
+a:visited{
+    color: #383B53;
+}
+
 body{
     height: 100vh;
     background-color: #EFF1C5;

@@ -20,6 +20,7 @@ body{
     background-color: #ee6c4d;
     position: sticky;
     top: 0px;
+    font-size: 2vh;
 }
 
 .backbutton{
