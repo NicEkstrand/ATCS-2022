@@ -8,18 +8,24 @@ h1{
     top: 10px;
     
 }
+
+.grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
 body{
-    height: 100vh;
     background-color: #beb89d;
 }
+
 img{
     height: 26vh;
     margin: 10px;
 }
 .facts{
+    grid-column: 2/3;
     width: 50vw;
     background-color: #e4ad6d;
-    float: right;
     font-size: 60px;;
 
 }
