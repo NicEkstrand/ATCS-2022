@@ -19,36 +19,6 @@
 }
 
 
-
-.middle{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.text{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    text-align: center;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 2vh;
-
-    width: 59vw;
-    height: 95vh;
-    background-color: #c7c093;
-    
-}
-
-.images{
-    display: flex;
-    flex-direction: column;
-    width: 40vw;
-    height: 95vh;
-    background-color: #002E2C;
-    align-items: center;
-    justify-content: center;
-}
-
 .backbutton{
     display: flex;
     align-content: flex-end;

@@ -1,11 +1,12 @@
 h1{
     display: flex;
-    justify-content: center;
-    background-color: #6F1A07;
+    text-decoration: underline;
     color: #F7F3E3;
     width: auto;
     position: sticky;
     top: 10px;
+    left: 10px;
+    font-size: 60px;
     
 }
 
@@ -15,28 +16,36 @@ h1{
 }
 
 body{
-    background-color: #beb89d;
+    background-image: url(about-me-background.png);
 }
 
 img{
-    height: 26vh;
+    height: 35vh;
     margin: 10px;
 }
 .facts{
     grid-column: 2/3;
     width: 50vw;
-    background-color: #e4ad6d;
-    font-size: 60px;;
+    font-size: 40px;;
+    color: #69121F;
 
 }
 
-.images{
+.carousel-inner{
+    height: 100vh;
+}
+
+
+
+/* .images{
     display: flex;
-    flex-wrap: wrap;
-    width: 47vw;
-    background-color: #2B2118;
+    align-items: center;
     position: fixed;
-}
+    height: 100vh;
+    margin-top: 20px;
+} */
+
+
 
 .backbutton{
     display: flex;
@@ -49,4 +58,8 @@ img{
 }
 a:visited{
     color: #383B53;
+}
+
+.bg-black {
+    background-color: black;
 }

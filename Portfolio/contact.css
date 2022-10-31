@@ -1,9 +1,12 @@
 body{
     height: 100vh;
     background-color: #D6EADF;
+    margin: 0;
+}
+
+.flexbox{
     display: flex;
     flex-wrap: wrap;
-    margin: 0;
 }
 
 .title{
