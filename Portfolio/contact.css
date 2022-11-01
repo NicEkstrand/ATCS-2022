@@ -10,9 +10,10 @@ body{
 }
 
 .title{
-    width: 50vw;
+    width: 31vw;
     height: 100vh;
-    background-color: #B8E0D2;
+    background-image: url(contact-background.png);
+    color: #A49966;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -22,9 +23,10 @@ body{
 }
 
 .text{
-    width: 49vw;
+    width: 69vw;
     height: 100vh;
-    background-color: #95B8D1;
+    background-image: url(contact-text-background.png);
+    color: #363020;
     display: flex;
     flex-direction: column;
     justify-content: center;

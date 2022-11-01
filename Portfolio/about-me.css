@@ -27,14 +27,16 @@ img{
     grid-column: 2/3;
     width: 50vw;
     font-size: 40px;;
-    color: #69121F;
+    color: #F7F3E3;
+    font-family: 'Times New Roman', Times, serif;
 
 }
 
-.carousel-inner{
-    height: 100vh;
-}
 
+.carousel-item{
+    width: 35vw;
+    
+}
 
 
 /* .images{
