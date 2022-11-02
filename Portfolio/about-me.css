@@ -10,9 +10,14 @@ h1{
     
 }
 
-.grid{
+/* .grid{
     display: grid;
     grid-template-columns: 50% 50%;
+} */
+
+.flexbox{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 body{
@@ -25,7 +30,6 @@ img{
 }
 .facts{
     grid-column: 2/3;
-    width: 50vw;
     font-size: 40px;;
     color: #F7F3E3;
     font-family: 'Times New Roman', Times, serif;
@@ -33,19 +37,16 @@ img{
 }
 
 
-.carousel-item{
-    width: 35vw;
-    
+.carousel-item .full-img{
+    display: flex;
+    justify-content: center;
 }
 
 
-/* .images{
-    display: flex;
-    align-items: center;
-    position: fixed;
+.images{
     height: 100vh;
     margin-top: 20px;
-} */
+}
 
 
 

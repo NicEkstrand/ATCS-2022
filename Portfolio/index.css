@@ -3,44 +3,28 @@ body {
     background-image: url(main-background.png);
 }
 
-.name{
+.title{
     display: flex;
-    color: #E4E6C3;
-    font-size: 100px;
-    width: 100vw;
-    height: auto;
-    justify-content: center;
-    margin-bottom: 0px;
-}
-.subtitle{
-    display: flex;
-    justify-content: center;
-    width: 100vw;
-    margin-top: 0px;
-    margin-bottom: 50px;
-    color: #E4E6C3;
-    font-weight: bolder;
-
-}
-
-
-
-.main-photo{
-    position: relative;
-    height: 500px;
-}
-
-.flex_box{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    height: 90vh;
     align-items: center;
 }
-
-a:link{
-    text-decoration: none;
-    color: #388659;
+.jumbotron{
+    width: 49vw;
+    background-color: #7F9183;
+    margin: 0px;
 }
-a:visited{
-    color: #388659;
+
+.container{
+    color: #222A23
+    
+}
+
+.main-photo{
+
+    width: 50vw;
+}
+
+.flex-box{
+    display: flex;
+    flex-wrap: wrap;
 }

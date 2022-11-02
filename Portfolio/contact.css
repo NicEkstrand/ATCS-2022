@@ -1,29 +1,30 @@
 body{
-    height: 100vh;
-    background-color: #D6EADF;
-    margin: 0;
+    height: 90vh;
 }
 
 .flexbox{
     display: flex;
     flex-wrap: wrap;
 }
+/*Jumbotron CSS*/
+.container{
 
-.title{
-    width: 31vw;
-    height: 100vh;
-    background-image: url(contact-background.png);
-    color: #A49966;
+    height: 86vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: "Lucida Console", "Courier New", monospace;
-    font-size: 5vw;
-
+    color: #C9AE7E;
 }
 
+.jumbotron{
+    margin: 0px;
+    background-image: url(contact-background.png);
+}
+/*End of Jumbotron CSS*/
+
+
 .text{
-    width: 69vw;
+
     height: 100vh;
     background-image: url(contact-text-background.png);
     color: #363020;
@@ -32,20 +33,9 @@ body{
     justify-content: center;
     text-align: center;
     color: #13070C;
-    font-family: "Helvetica", "Sans-sarif"
+    font-family: "Helvetica", "Sans-sarif";
 }
 
-.backbutton{
-    display: flex;
-    align-content: flex-end;
-    bottom: 10px;
-    font-size: 30px;
-    color: #383B53;
-    position: fixed;
-    left: 20px;
-    
-}
-
-a:visited{
-    color: #383B53;
+h3{
+    font-size: 3vw;
 }
