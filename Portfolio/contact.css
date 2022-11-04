@@ -32,10 +32,14 @@ body{
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    color: #13070C;
     font-family: "Helvetica", "Sans-sarif";
 }
 
 h3{
+
     font-size: 3vw;
+}
+
+a:visited{
+    color: #363020;
 }

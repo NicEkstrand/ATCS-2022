@@ -4,8 +4,8 @@ h1{
     color: #F7F3E3;
     width: auto;
     position: sticky;
+    margin-left: 20px;
     top: 10px;
-    left: 10px;
     font-size: 60px;
     
 }
@@ -29,13 +29,13 @@ img{
     margin: 10px;
 }
 .facts{
+    margin: 10px;
     grid-column: 2/3;
     font-size: 40px;;
     color: #F7F3E3;
     font-family: 'Times New Roman', Times, serif;
 
 }
-
 
 .carousel-item .full-img{
     display: flex;
@@ -46,23 +46,4 @@ img{
 .images{
     height: 100vh;
     margin-top: 20px;
-}
-
-
-
-.backbutton{
-    display: flex;
-    align-content: flex-end;
-    bottom: 10px;
-    font-size: 30px;
-    color: #383B53;
-    position: fixed;
-    
-}
-a:visited{
-    color: #383B53;
-}
-
-.bg-black {
-    background-color: black;
 }

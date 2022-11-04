@@ -20,11 +20,11 @@ body {
 }
 
 .main-photo{
-
-    width: 50vw;
+    height: max-content;
 }
 
 .flex-box{
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
 }
