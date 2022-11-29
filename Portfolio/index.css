@@ -1,55 +1,30 @@
 body {
     height: 100vh;
-    background: linear-gradient(to bottom, #9fb8ad, #475841);
+    background-image: url(main-background.png);
 }
 
-.name{
+.title{
     display: flex;
-    color: #3f403f;
-    font-size: 100px;
-    width: 100vw;
-    height: auto;
-    justify-content: center;
-    margin-bottom: 0px;
+    height: 90vh;
+    align-items: center;
 }
-.subtitle{
-    display: flex;
-    justify-content: center;
-    width: 100vw;
-    margin-top: 0px;
-    margin-bottom: 50px;
+.jumbotron{
+    width: 49vw;
+    background-color: #7F9183;
+    margin: 0px;
+}
 
-    color: #3f403f;
-    font-weight: bolder;
-
+.container{
+    color: #222A23
+    
 }
 
 .main-photo{
-    position: relative;
-    height: 500px;
+    height: max-content;
 }
 
-.flex_box{
+.flex-box{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
     align-items: center;
-}
-
-
-.foot_flex_box{
-    display: flex;
-    position: fixed;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    bottom: 20px;
-    width: 100vw;
-}
-
-a:link{
-    text-decoration: none;
-    color: #388659;
-}
-a:visited{
-    color: #388659;
 }

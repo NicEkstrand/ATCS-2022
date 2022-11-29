@@ -1,15 +1,29 @@
 .title{
     display: flex;
-    background-color: #A2A77F;
-    color: #002E2C;
+    background-color: #634133;
+    color: #B86F52;
     font-size: 1.25vw;
     justify-content: center;
     height: 5vh;
     margin: 0px;
 }
 
+.navbar{
+    background-color: #DB6F57;
+}
+.flexbox{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: space-between;
+    height: 100vh;
+}
 .title > h1{
     margin: 0;
+}
+
+.card-deck{
+    display: flex;
+    margin: 10px;
 }
 
 .images > img{
@@ -18,53 +32,13 @@
     margin-bottom: 1vh;
 }
 
-
-
-.middle{
-    display: flex;
-    flex-wrap: wrap;
+.card{
+    background-color: #DB6F57;
 }
 
-.text{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    text-align: center;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 2vh;
-
-    width: 59vw;
-    height: 95vh;
-    background-color: #c7c093;
-    
-}
-
-.images{
-    display: flex;
-    flex-direction: column;
-    width: 40vw;
-    height: 95vh;
-    background-color: #002E2C;
-    align-items: center;
-    justify-content: center;
-}
-
-.backbutton{
-    display: flex;
-    align-content: flex-end;
-    bottom: 10px;
-    font-size: 30px;
-    color: #383B53;
-    position: fixed;
-    left: 20px;
-    
-}
-a:visited{
-    color: #383B53;
-}
 
 body{
     height: 100vh;
-    background-color: #EFF1C5;
+    background-image: url(experiences-background.png);
     margin: 0;
 }

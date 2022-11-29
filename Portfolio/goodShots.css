@@ -11,13 +11,18 @@ video{
 
 body{
     height: 100vh;
-    background: #e6e6e6;
+    background-image: url(good-shots-background.png);
     
 }
+
+.navbar{
+    background-color: #F0F3BD;
+}
+
 .title{
     display: flex;
     justify-content: center;
-    background-color: #ee6c4d;
+    background-color: #E4E986;
     position: sticky;
     top: 0px;
     font-size: 2vh;

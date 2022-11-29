@@ -1,0 +1,49 @@
+h1{
+    display: flex;
+    text-decoration: underline;
+    color: #F7F3E3;
+    width: auto;
+    position: sticky;
+    margin-left: 20px;
+    top: 10px;
+    font-size: 60px;
+    
+}
+
+/* .grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+} */
+
+.flexbox{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+body{
+    background-image: url(about-me-background.png);
+}
+
+img{
+    height: 35vh;
+    margin: 10px;
+}
+.facts{
+    margin: 10px;
+    grid-column: 2/3;
+    font-size: 40px;;
+    color: #F7F3E3;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.carousel-item .full-img{
+    display: flex;
+    justify-content: center;
+}
+
+
+.images{
+    height: 100vh;
+    margin-top: 20px;
+}

@@ -1,46 +1,45 @@
 body{
-    height: 100vh;
-    background-color: #D6EADF;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0;
+    height: 90vh;
 }
 
-.title{
-    width: 50vw;
-    height: 100vh;
-    background-color: #B8E0D2;
+.flexbox{
+    display: flex;
+    flex-wrap: wrap;
+}
+/*Jumbotron CSS*/
+.container{
+
+    height: 86vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: "Lucida Console", "Courier New", monospace;
-    font-size: 5vw;
-
+    color: #C9AE7E;
 }
 
+.jumbotron{
+    margin: 0px;
+    background-image: url(contact-background.png);
+}
+/*End of Jumbotron CSS*/
+
+
 .text{
-    width: 49vw;
+
     height: 100vh;
-    background-color: #95B8D1;
+    background-image: url(contact-text-background.png);
+    color: #363020;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    color: #13070C;
-    font-family: "Helvetica", "Sans-sarif"
+    font-family: "Helvetica", "Sans-sarif";
 }
 
-.backbutton{
-    display: flex;
-    align-content: flex-end;
-    bottom: 10px;
-    font-size: 30px;
-    color: #383B53;
-    position: fixed;
-    left: 20px;
-    
+h3{
+
+    font-size: 3vw;
 }
 
 a:visited{
-    color: #383B53;
+    color: #363020;
 }
