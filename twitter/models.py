@@ -27,6 +27,10 @@ class User(Base):
                              overlaps="following")
     tweets = relationship("Tweet", back_populates="user")
 
+    def __init__(self, username, password):
+        self.username = username
+        self.password = password
+
 
 class Follower(Base):
     __tablename__ = "followers"
