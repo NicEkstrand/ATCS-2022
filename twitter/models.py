@@ -44,18 +44,39 @@ class Follower(Base):
 class Tweet(Base):
     __tablename__ = "tweets"
     id = Column("id", INTEGER, primary_key=True)
-    content = Column("content", INTEGER)
+    content = Column("content", TEXT)
     timestamp = Column("timestamp", INTEGER)
     username = Column("username", TEXT, ForeignKey("users.username"))
     user = relationship("User", back_populates="tweets")
+    tags = relationship("Tag", secondary="tweettags",back_populates="tweets")
+
+    def __init__(self, content, timestamp, username):
+        self.content = content
+        self.timestamp = timestamp
+        self.username = username
+
+    def __repr__(self):
+        tag_text = ""
+        for tag in self.tags:
+            tag_text = tag_text + tag.content + " "
+        return self.content + "\n" + tag_text + "\n" + self.timestamp
+        
 
 class Tag(Base):
     __tablename__ = "tags"
     id = Column("id", INTEGER, primary_key=True)
     content = Column("content", TEXT)
+    tweets = relationship("Tweet", secondary="tweettags", back_populates="tags")
+
+    def __init__(self, content):
+        self.content = content
 
 class TweetTag(Base):
     __tablename__ = "tweettags"
     id = Column("id", INTEGER, primary_key=True)
     tweet_id = Column("tweet_id", INTEGER, ForeignKey("tweets.id"))
     tag_id = Column("tag_id", INTEGER, ForeignKey("tags.id"))
+
+    def __init__(self, tweet_id, tag_id):
+        self.tweet_id = tweet_id
+        self.tag_id = tag_id

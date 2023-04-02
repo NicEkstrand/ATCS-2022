@@ -3,6 +3,11 @@ from database import init_db, db_session
 from datetime import datetime
 
 class Twitter:
+
+    def __init__(self, logged_in = False, user = None):
+        self.logged_in = logged_in
+        self.user = user
+
     """
     The menu to print once a user has logged in
     """
@@ -58,6 +63,7 @@ class Twitter:
                 db_session.add(person)
                 db_session.commit()
                 good_input = True
+                self.user = person
             else:
                 print("\nDoesn't match")
         
@@ -71,14 +77,15 @@ class Twitter:
             name = input("Username: ")
             password = input("Password: ")
 
-            results = db_session.query(User)
-            for user in results:
-                if user.username == name and user.password == password:
-                    print("Logged in. Welcome " + name)
-                    self.user = user
-                    good_input = True
-                else:
-                     print("Invalid username or password\n")
+            target = db_session.query(User).where(User.username == name and User.password == password).first()
+
+            if target.username == name:
+                print("Logged in. Welcome " + name)
+                self.user = target
+                good_input = True
+                self.logged_in = True
+            else:
+                print("Invalid username or password\n")
                         
 
     
@@ -87,6 +94,8 @@ class Twitter:
         if confirm == "y":
             print("Logged out")
             self.user = None
+            self.logged_in = False
+            self.startup()
 
     """
     Allows the user to login,  
@@ -116,11 +125,28 @@ class Twitter:
         target = db_session.query(User).where(User.username == username).first()
         self.user.following.delete(target)
         db_session.commit()
+
+
     def tweet(self):
-        pass
-    
+        text = input("Tweet something: ")
+        included_tags = input("Enter your tags separated by spaces: ")
+        tweet = Tweet(text, datetime.now(), self.user.username)
+        db_session.add(tweet)
+        db_session.commit()
+
+        for tag in included_tags.split():
+            new_tag = db_session.query(Tag).where(Tag.content == tag).first()
+            if new_tag == None:
+                new_tag = Tag(tag)
+                db_session.add(new_tag)
+                db_session.commit()
+            db_session.add(TweetTag(tweet.id, new_tag.id))
+        db_session.commit()
+
+
     def view_my_tweets(self):
-        pass
+        self.print_tweets(self.user.tweets)
+            
     
 
     """
@@ -128,13 +154,25 @@ class Twitter:
     people the user follows
     """
     def view_feed(self):
-        pass
+        results = db_session.query(Tweet).order_by(Tweet.timestamp.desc()).limit(5)
+        for tweet in results:
+            print(tweet)
+        #self.view_my_tweets(results)
 
     def search_by_user(self):
-        pass
+        target = db_session.query(User).where(User.username == input("Enter a username: ")).first()
+        if target != None:
+            self.print_tweets(target.tweets)
+        else:
+            print("There is no user with that name")
+        
 
     def search_by_tag(self):
-        pass
+        target = db_session.query(Tag).where(Tag.content == input("Enter a tag: ")).first()
+        if target != None:
+            self.print_tweets(target.tweets)
+        else:
+            print("That tag does not exist")
 
     """
     Allows the user to select from the 
@@ -145,25 +183,26 @@ class Twitter:
 
         print("Welcome to ATCS Twitter!")
         self.startup()
+        while(self.logged_in):
 
-        self.print_menu()
-        option = int(input(""))
+            self.print_menu()
+            option = int(input(""))
 
-        if option == 1:
-            self.view_feed()
-        elif option == 2:
-            self.view_my_tweets()
-        elif option == 3:
-            self.search_by_tag()
-        elif option == 4:
-            self.search_by_user()
-        elif option == 5:
-            self.tweet()
-        elif option == 6:
-            self.follow()
-        elif option == 7:
-            self.unfollow()
-        else:
-            self.logout()
+            if option == 1:
+                self.view_feed()
+            elif option == 2:
+                self.view_my_tweets()
+            elif option == 3:
+                self.search_by_tag()
+            elif option == 4:
+                self.search_by_user()
+            elif option == 5:
+                self.tweet()
+            elif option == 6:
+                self.follow()
+            elif option == 7:
+                self.unfollow()
+            else:
+                self.logout()
         
         self.end()
