@@ -189,9 +189,9 @@ class Twitter:
     """
     def view_feed(self):
         results = db_session.query(Tweet).order_by(Tweet.timestamp.desc()).limit(5)
-        for tweet in results:
-            print(tweet)
-        #self.view_my_tweets(results)
+        #for tweet in results:
+            #print(tweet)
+        self.print_tweets(results)
 
     def search_by_user(self):
         #Finds user in db that matches input
